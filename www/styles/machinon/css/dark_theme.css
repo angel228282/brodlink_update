@@ -1,0 +1,99 @@
+/**** ./dark_theme.css ***/
+/* Dark theme */
+
+:root {
+	/*use with var(--main-blue-color)*/
+    --main-bg-color: #333639;
+    --main-blue-color: #0b96cd;
+    --main-navbar-bg-color: #232324;
+    --main-item-bg-color: #515558;
+    --main-text-color: white;
+    --main-border-color: black;
+}
+
+header.logo {
+    background-image: linear-gradient(275deg, #103c68, #0073a7);
+}
+
+.dropdown-content,
+.mHeaderBtn li,
+.rectangle-8,
+.rectangle-8-dropdown {
+    background-color: #515558;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-inverse .navbar-inner,
+.navbar .nav li a,
+.navbar .nav li a:hover {
+        background-color: var(--main-blue-color);
+    }
+}
+
+.slider {
+    background-color: #ccc;
+}
+
+.slider:before {
+    background-color: #5A5A5A;
+}
+
+.slider.round {
+    background-color: #393B3E;
+}
+
+.ui-corner-all,
+.display .ui-widget-content,
+.ui-widget-content {
+    color: var(--main-text-color)
+}
+
+select.ui-corner-all, .ui-widget-content.selectorlevels-menu {
+    background: var(--main-navbar-bg-color) !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    background: var(--main-bg-color);
+}
+
+.mDropdown-Text,
+.machinoSettings h2,
+.machinoText {
+    color: var(--main-text-color)
+}
+
+.machinoHeader {
+    color: #000;
+}
+
+.mDropdown-Text:hover {
+    color: rgba(255,255,255,0.5);
+}
+
+#settingscontent input.parentrequired:not(:checked) ~ input.parentrequiredchild + label {
+    color: #696969;
+}
+
+#login:before {
+    background-image: linear-gradient(275deg, #103c68, #0073a7);
+}
+
+@media (max-width: 767px) {
+    #searchInput:read-write:focus {
+        background: linear-gradient(275deg, #103c68, #0073a7);
+    }
+}
+
+.scroll:before {
+    top: 0;
+    background-image: linear-gradient(to top, rgba(81,85,88, 0), rgba(81,85,88, 1) 90%);
+}
+
+#bigtext, .switch-cell {
+    background: linear-gradient(to right, rgba(81,85,88, 0), rgba(81,85,88, 1) 15px) !important;
+}
+
+#holder .row .item table[id^="item"] > tbody > tr.with-cam-preview > #name {
+    background: rgba(0,0, 0, 0.2) !important;
+}
+
